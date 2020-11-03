@@ -1,14 +1,17 @@
 
+#frase{
+    familia de fuentes: 'Work Sans', sans-serif;
+}
+    
 
 #pagina1{
     display: block;
 }
-
 header{
     height: 60px;
     width: 100%;
     background-color: #175ABF;
-
+  
 }
 .imagen1 {
     display: block;
@@ -30,6 +33,29 @@ header{
     display: none;
 }
 
+.imagen4 {
+    display: block;
+    width: 230px;
+    justify-content: flex-start;
+}
+#caja {
+    margin: auto;
+}
+#nombre{
+    background-color:  #C4C4C4;
+    border-radius: 40px;
+    padding: 5px 30px 5px 30px;
+    color: gray;
+    display: block;
+    margin: auto;
+    font-size: 12px;
+}
+#Nombre{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
 #nombre-ejemplo{
     background-color:  #C4C4C4;
     border-radius: 40px;
@@ -39,16 +65,8 @@ header{
     margin: auto;
     font-size: 12px;
 }
-#nombre-box{
-    background-color:  #C4C4C4;
-    border-radius: 40px;
-    padding: 5px 30px 5px 30px;
-    color: gray;
-    display: block;
-    margin: auto;
-    font-size: 12px;
-}
-#fecha-tarjeta{
+
+#FechaTarjeta{
     background-color: #C4C4C4;
     border-radius: 40px;
     padding: 5px 30px 5px 30px;
@@ -66,7 +84,7 @@ header{
     margin: auto;
     font-size: 12px;
 }
-#numero-tarjeta{
+#numeroTarjeta{
     background-color: #C4C4C4;
     border-radius: 40px;
     padding: 5px 30px 5px 30px;
@@ -75,7 +93,47 @@ header{
     margin:auto;
     font-size: 12px;
 }
+#validar{
+    background-color: #175ABF;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    color: white;
+    display: block;
+    margin:auto;
+    font-size: 14px;
+}
+
+#botonvolver{
+    background-color: #175ABF;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    color: white;
+    display: block;
+    margin:auto;
+    font-size: 14px;
+}
+
+.imagen2{
+    display: block;
+    width: 200px;
+    justify-content: flex-end;
+    order: default -1;
+}
+.imagen3{
+    display: block;
+    width: 200px;
+    justify-content: flex-end;
+    order: default -1;
+}
 .frase {
     margin: auto;
     text-align: center;
+}
+
+#pagina3{
+    display: none;
+}
+
+#pagina4{
+    display: block;
 }

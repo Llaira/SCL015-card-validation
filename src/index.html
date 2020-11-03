@@ -11,78 +11,53 @@
     <!--Primera página-->
     <div class= "primeraPagina" id= "pagina1">
     <header></header>
-        <div>
-            <img src="img/img1.png" class="imagen1" width="">
-        </div>
+    <div>
+        <img src="img/img1.png" class="imagen1" width="">
+    </div>
 
-        <div class= "frase">
-            <p>App de validación de tarjetas para pequeñas empresas</p>
-        </div>
+    <div class= "frase">
+        <p>App de validación de tarjetas para pequeñas empresas</p>
+    </div>
        
-        <div id="botoningresar">
-            <input type="button" id="ingresar" class="button" value="INGRESAR" >
-        </div>
+    <div id="botoningresar">
+        <input type="button" id="ingresar" class="button" value="INGRESAR">
+     </div>
     </div>
 
  <!--segunda página-->
 
 <div class= "segundaPagina" id= "pagina2">
 
-   <header></header> <!--encabezado azul-->
-    
+ <header></header> <!--encabezado azul-->
     <div>
-        <img src="img/img1.png" class="imagen1" width="40px">
+        <img src="img/img4.png" class="imagen4" width="40px">
     </div>
 
-<!--ingreso de datos-->        
-<form action="validación de datos"></form>
-<label for="nombre-ejemplo">Nombre</label>
-<input
-    type= "nombre"
-    id="nombre-box"
-    placeholder="Nombre"
-    name="nombre-ejemplo"
-    requerid
-></form>
+<!--ingreso de datos-->  
+<fieldset class="dentro" id="caja">       
+<legend>Ingreso de datos</legend>
+<br>
+<input type="text" name="Nombre" id= "nombre" placeholder="Ingrese su nombre">
+<br>
+<input type="text" name="FechaTarjeta" id= "FechaTarjeta" placeholder="Ingrese fecha de tarjeta">
+<br>
+<input type="text" name="numeroTarjeta" id= "numeroTarjeta" placeholder="Ingrese número de tarjeta">
+<br>
+<input type="password" class="cvv" placeholder="CVV"  required id="cvv" maxlength="3">
+<br>
 
-<form action="fecha de tarjeta"></form>
-<label for="fecha-tarjeta">Fecha</label>
-<input
-    type= "fecha"
-    id="fecha-tarjeta"
-    placeholder="Fecha tarjeta"
-    name="fecha-tarjeta"
-    requerid
-></form>
+<div id="botonvalidar">
+<button id="validar">validar</button>
+</div>
 
-<form action="CVV"></form>
-<label for="cvv">CVV</label>
-<input
-    type= "cvv"
-    id="cvv"
-    placeholder="Código tarjeta"
-    name="CVV"
-    requerid
-></form>
-
-<form>
-    <label for="numero-tarjeta">Número</label>
-    <input
-      type="número de tarjeta"
-      id="numero-tarjeta"
-      placeholder="Número de tarjeta"
-      name="numero-tarjeta"
-      required
-    />
-    <button type="submit">validar</button>
-  </form>
-  <button class="boton" id="volver">V O L V E R</button>
-  <div>
+<button class="boton" id="botonvolver">Volver</button>
+</fieldset>
+<div>
     <img src="img/img2.png" class="imagen2" width="40px">
   </div>
 
 
-    </div>
+</div>
 
 <!--Tercera página-->
 
@@ -90,10 +65,11 @@
 <header></header>
 
 <div>
-    <img src="img/img1.png" class="imagen1" width="40px">
+    <img src="img/img3.png" class="imagen3" width="40px">
 </div>
 
-<div> <h1>Validación Exitosa</h1>
+<div> 
+    <h1>Validación Exitosa</h1>
 </div>
 <div>
     <button class="boton" id="tarjetaValida">Tarjeta Válida</button>
@@ -101,7 +77,7 @@
 <div>
     <img src="img/img2.png" class="imagen2" width="40px">
   </div>
-
+<input type="button" name="" value="Salir" id="Salir">
 
 </div>  
 

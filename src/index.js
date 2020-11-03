@@ -1,6 +1,6 @@
 import validator from './validator.js';
 
-console.log(validator);
+//console.log(validator);
 // declaración de variables a utilizar 
 const primeraPagina = document.getElementById("pagina1");
 const segundaPagina = document.getElementById("pagina2");
@@ -21,22 +21,34 @@ botonIngresar.addEventListener("click", ingresar);
     document.getElementById("pagina2").style.display= "block";
   }
 
-function mostrar(){
-    document.getElementById('pagina2').style.display = 'block';
+  const botonvalidar=document.getElementById("validar")
+  botonvalidar.addEventListener("click", mostrar);  
+
+  function mostrar(){
+//document.getElementById('pagina2').style.display = 'block';
 //segundaPagina.style.display = "block";
 //Crear un evento para mostra y ocultar páginas
-botonIngresar.addEventListener("ingresar",function(){
-primeraPagina.style.display = "none";
-segundaPagina.style.display = "block";
-})
+//botonIngresar.addEventListener("click",mostrar(){
+  document.getElementById("botonvalidar").style.display="none";
+  document.getElementById('pagina1').style.display = "none";
+  document.getElementById("pagina2").style.display= "none";
+  document.getElementById("pagina3").style.display= "block";
+}
+
  //función botón volver a primera pagina
-document.getElementById("volver1").addEventListener("click", ()=>{
-    
-  document.getElementById("pagina1").style.display="none";
-  document.getElementById("pagina2").style.display="block";
+ 
+ 
+  //document.getElementById("volver1").addEventListener("click", ()=>{
+  //document.getElementById("pagina1").style.display="none";
+  //document.getElementById("pagina3").style.display="block";
   
-});
+//});
+//const botonvolver=document.getElementById("volver")
+//botonvolver.addEventListener("click", mostrar);  
 
-
-        
-        
+//function mostrar(){
+//document.getElementById("botonvolver").style.display="none";
+//document.getElementById('pagina1').style.display = "block";
+//document.getElementById("pagina2").style.display= "none";
+//document.getElementById("pagina3").style.display= "none";
+//}
