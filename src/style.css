@@ -2,17 +2,23 @@
 #frase{
     familia de fuentes: 'Work Sans', sans-serif;
 }
-    
+
 
 #pagina1{
     display: block;
 }
+
 header{
     height: 60px;
     width: 100%;
     background-color: #175ABF;
   
 }
+.frase {
+    margin: auto;
+    text-align: center;
+}
+
 .imagen1 {
     display: block;
     margin: auto;
@@ -35,11 +41,18 @@ header{
 
 .imagen4 {
     display: block;
-    width: 230px;
+    width: 210px;
     justify-content: flex-start;
+}
+.frase2{
+    margin: auto;
+    text-align: center;
 }
 #caja {
     margin: auto;
+    background-color: #F29508 ;
+    width: 300px;
+    justify-content: space-around;
 }
 #nombre{
     background-color:  #C4C4C4;
@@ -57,7 +70,7 @@ header{
 
 }
 #nombre-ejemplo{
-    background-color:  #C4C4C4;
+    background-color:  #614e4e;
     border-radius: 40px;
     padding: 5px 30px 5px 30px;
     color: gray;
@@ -115,7 +128,7 @@ header{
 
 .imagen2{
     display: block;
-    width: 200px;
+    width: 100px;
     justify-content: flex-end;
     order: default -1;
 }
@@ -125,10 +138,7 @@ header{
     justify-content: flex-end;
     order: default -1;
 }
-.frase {
-    margin: auto;
-    text-align: center;
-}
+
 
 #pagina3{
     display: none;
