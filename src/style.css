@@ -41,18 +41,23 @@ header{
 
 .imagen4 {
     display: block;
-    width: 210px;
+    width: 200px;
     justify-content: flex-start;
+    margin-left: 200px;
+    left: 300px;
 }
 .frase2{
     margin: auto;
     text-align: center;
 }
 #caja {
-    margin: auto;
-    background-color: #F29508 ;
+    margin-top: auto;
+    background-color: #F5B041 ;
     width: 300px;
-    justify-content: space-around;
+    height: 385px;
+    left: 500px;
+    top: 100px;
+    position: absolute;
 }
 #nombre{
     background-color:  #C4C4C4;

@@ -1,5 +1,5 @@
 const validator = {
-  invalid:(tarjeta)=>{ 
+  isValid:(tarjeta)=>{ 
     //funcion para validar (valida o invalida)
     let largoTarjeta= 0;
     //definimos el largo de la tarjeta 
