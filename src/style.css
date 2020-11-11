@@ -1,6 +1,6 @@
 
-#frase{
-    familia de fuentes: 'Work Sans', sans-serif;
+.body{
+    family-fonts: 'Sarabun', sans-serif;
 }
 
 
@@ -43,8 +43,8 @@ header{
     display: block;
     width: 200px;
     justify-content: flex-start;
-    margin-left: 200px;
-    left: 300px;
+    margin-left: 100px;
+    left: 200px;
 }
 .frase2{
     margin: auto;
@@ -53,6 +53,8 @@ header{
 #caja {
     margin-top: auto;
     background-color: #F5B041 ;
+    padding: 50px;
+    border-radius: 50px;
     width: 300px;
     height: 385px;
     left: 500px;
@@ -121,7 +123,7 @@ header{
     font-size: 14px;
 }
 
-#botonvolver{
+#volver{
     background-color: #175ABF;
     border-radius: 10px;
     padding: 5px 20px 5px 20px;
@@ -135,7 +137,7 @@ header{
     display: block;
     width: 100px;
     justify-content: flex-end;
-    order: default -1;
+    order: default 1;
 }
 .imagen3{
     display: block;
