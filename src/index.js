@@ -1,13 +1,5 @@
-import validator from './validator.js';
+//import validator from './validator.js';
 
-//console.log(validator);
-// declaración de variables a utilizar 
-const primeraPagina = document.getElementById("pagina1");
-const segundaPagina = document.getElementById("pagina2");
-const terceraPagina = document.getElementById("pagina3");
-
-
-//Función para que botón ingresar redirija a segunda pagina para ingresar datos
 const botonIngresar=document.getElementById("ingresar")
 botonIngresar.addEventListener("click", ingresar);
 
@@ -18,54 +10,60 @@ botonIngresar.addEventListener("click", ingresar);
     document.getElementById("volver").style.display="block";
   }
 
-  const botonValidar=document.getElementById("validar")
-  botonValidar.addEventListener("click", validar)
-
-  function validar() {
-    let numeroTarjeta= document.getElementById("numeroTarjeta").value
-    console.log(numeroTarjeta)
-    //posiciones pares multiplicar x 2
-    //posiciones impares dejarlas tal cual
-    //si la posicion par al multiplicarla me da mas de 10 hay que sumar sus digitos
-  }
+  
   
   const botonVolver=document.getElementById("volver")
   botonVolver.addEventListener("click", volver)
-  
-    function volver() {
+
+  function volver() {
       //console.log("hola")
       document.getElementById("volver").style.display="none";
       document.getElementById("pagina1").style.display="block";
       document.getElementById("botoningresar").style.display="block";
       document.getElementById("pagina2").style.display= "none";
-    }
+  }
+         
+document.getElementById("validar").addEventListener('click', validar)
+ 
+  function validar(){
+    console.log ("hola soy validar");
+    //guardes el valor del input
+    let numeroTarjeta = document.getElementById("numeroTarjeta").value;
+    console.log(numeroTarjeta);
+    let sum = 0;
+    let TarjetaInvertida = numeroTarjeta.split('').reverse().join('');
+    console.log(TarjetaInvertida);
+    for (let i = 0; i < TarjetaInvertida.length; i++){
+     // console.log(TarjetaInvertida[i]);
+        if (TarjetaInvertida.length === 16){
+          //console.log("tengo 16 digitos");
+          let numero = parseInt(TarjetaInvertida.substr(i, 1));
+         // console.log(numero);
+          if (i % 2 !==0) {
+              numero *= 2;
+             // console.log(numero) 
+            if (numero >9){
+              
+              numero = 1 + (numero % 10);
+              //sum += numero;
+              //console.log(numero)
+
+              
+            }
+        }
+          sum = sum + numero
+          console.log(sum)
+
+      }
   
-
-
-
-
-  //const botonvalidar=document.getElementById("validar")
-  //botonvalidar.addEventListener("click", mostrar);  
-
- // function mostrar(){
-//Crear un evento para mostra y ocultar páginas
-//botonIngresar.addEventListener("click",mostrar(){
- // document.getElementById("botonvalidar").style.display="none";
-  //document.getElementById('pagina1').style.display = "none";
-  //document.getElementById("pagina2").style.display= "none";
-  //document.getElementById("pagina3").style.display= "block";
-  //let nombreUsuario= document.getElementById("nombre").value;
-  //let tarjeta= document.getElementById("numeroTarjeta").value;
-  //document.getElementById("sobrescribir").innerHTML = "Hola" + nombreUsuario + " Tu tarjeta es " + tarjeta;
-//}
-
-//document.getElementById("validator").onclick= function(){
-  //document.getElementById("pagina2").style.display="none";
-  //document.getElementById("pagina3").style.display="block";
-  //let nombreUsuario= document.getElementById("nombre").value;
-  //let tarjeta= document.getElementById("numeroTarjeta").value;
-  //document.getElementById("sobrescribir").innerHTML = "Hola" + nombreUsuario + " Tu tarjeta es " + tarjeta;
-//}
-
-
-//donde va nombre y tarjeta, debe estar la funcion isvalid 
+  
+  
+    }  
+    //si el resultado del resto es = a cero, devolver o imprimir válida. si no es igual a cero devolver invalida
+    if (sum % 10 == 0){
+      alert ("Tarjeta Válida")
+    }
+      else {
+       alert ("Tarjeta Inválida")
+      }
+   }

@@ -14,6 +14,7 @@ header{
     background-color: #175ABF;
   
 }
+
 .frase {
     margin: auto;
     text-align: center;
@@ -25,6 +26,7 @@ header{
     width: 400px;
     justify-content: center;
 }
+
 #ingresar {
     background-color: #175ABF;
     border-radius: 50px;
@@ -39,6 +41,7 @@ header{
     display: none;
 }
 
+
 .imagen4 {
     display: block;
     width: 200px;
@@ -46,21 +49,28 @@ header{
     margin-left: 100px;
     left: 200px;
 }
+
 .frase2{
-    margin: auto;
-    text-align: center;
-}
+   position: absolute;
+   top: ;
+   left: 400px;
+   height: 100%;
+   width: 100%;
+   margin: -15% 0 0 -15%;
+ }
+
 #caja {
     margin-top: auto;
     background-color: #F5B041 ;
     padding: 50px;
     border-radius: 50px;
     width: 300px;
-    height: 385px;
+    height: 350px;
     left: 500px;
-    top: 100px;
+    top: 150px;
     position: absolute;
 }
+
 #nombre{
     background-color:  #C4C4C4;
     border-radius: 40px;
@@ -70,12 +80,14 @@ header{
     margin: auto;
     font-size: 12px;
 }
+
 #Nombre{
     margin: auto;
     justify-content: center;
     align-items: center;
 
 }
+
 #nombre-ejemplo{
     background-color:  #614e4e;
     border-radius: 40px;
@@ -95,6 +107,7 @@ header{
     margin: auto;
     font-size: 12px;
 }
+
 #cvv{
     background-color:  #C4C4C4;
     border-radius: 40px;
@@ -104,6 +117,7 @@ header{
     margin: auto;
     font-size: 12px;
 }
+
 #numeroTarjeta{
     background-color: #C4C4C4;
     border-radius: 40px;
@@ -113,6 +127,7 @@ header{
     margin:auto;
     font-size: 12px;
 }
+
 #validar{
     background-color: #175ABF;
     border-radius: 10px;
@@ -139,13 +154,13 @@ header{
     justify-content: flex-end;
     order: default 1;
 }
+
 .imagen3{
     display: block;
     width: 200px;
     justify-content: flex-end;
     order: default -1;
 }
-
 
 #pagina3{
     display: none;

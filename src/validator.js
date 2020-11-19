@@ -1,51 +1,39 @@
-const validator = {
-  isValid:(tarjeta)=>{ 
-    //funcion para validar (valida o invalida)
-    let largoTarjeta= 0;
-    //definimos el largo de la tarjeta 
-    let marcaPosicion= 0;
-    //cuenta desde el inicio considerando el cero
-    let numeroTarjeta= parseInt (tarjeta);
-    //parseint para pasar de string a numeros enteros
-    while (numeroTarjeta !=0) {
-    //while realiza un ciclo 
-    //mientras el numero de tarjeta sea distinto a cero funciona lo del interior
-      let divisionTarjeta= numeroTarjeta%10;
-    //el numeroTarjeta se divide x 10
-      if (marcaPosicion%2!=0) {
-      //le damos una condición que si es par debe ser distinto a cero
-        let multiplicaTarjeta= divisionTarjeta*2;
-      //me toma la posicion par y multiplica x 2
-        if (multiplicaTarjeta >9) {
-        //condición si multiplicaTarjeta es mayor a 9 se ejecuta la variable
-          let multiplicaString= multiplicaTarjeta.toString 
-          //es para sacar los 2 digitos y los separe
-          multiplicaTarjeta= parseInt(multiplicaString.charArt(0)+multiplicaString.charArt(1))
-          //separa los dos numeros que fueron multiplicados en la posicion 2 
-        }
-        largoTarjeta += multiplicaTarjeta 
-        //multiplicaTarjeta es el resultado de la linea 22
-        // al agregar el += se agrega una posicion y a esa posicion 
-      }
-      else{
-        largoTarjeta += divisionTarjeta
-        //si no se cumple la posicion par se agrega a otra posicion
-      }
-      numeroTarjeta= parseInt(numeroTarjeta/10);
-      //el numeroTarjeta se divido por 10 
-      //debo cerrar todas las variables con ;  !!!
-      marcaPosicion ++ ;
-      //le agregamos una posicion 
-    }
-    if (largoTarjeta%10 ==0) {
-      return "Tarjeta Valida"
-    }
-    else {
-      return "Tarjeta Invalida"
-    }
+//import { TestScheduler } from "jest";
+
+/*const isValid = (Tarjeta) => {
+  let sum = 0;
+  let TarjetaInvertida = Tarjeta.split('').reverse().join('')
+  for (let i = 0; i < TarjetaIvertida.lenght; i++) {
+    //for recorre los numero y cuenta con un largo máximo. en En este caso el largo debe ser el del numero de tarjeta.
+       let numero = parseInt(TarjetaInvertida.substr(i, 1));
+        //se convierte el string en un numero y vuelve los caracteres
+       if (i % 2 !==0) {
+         //i divido el resto, debe ser distinto a cero
+         numero *= 2;
+         //el numero se multiplica x 2
+         if (numero >9){
+             numero = 1 + (numero % 10);
+         }
+       }
+       sum += numero;
   }
+  return (sum % 10) == 0;
+}
 
-};
+const validator = {isValid}
+export default validator;*/
+    /*const numeroTarjeta= document.getElementById("numeroTarjeta").value = isValid(Tarjeta) === true;
+      if (numeroTarjeta.lenght === 16 && validator.isValid(numeroTarjeta) === true) {
+          document.getElementById("validar").innerHTML = '<a href="#">Tu Tarjeta es válida' 
+      } else{
+           document.getElementById("validar").innerHTML = '<a href="#">Tu Tarjeta es invalida, intenta con otra tarjeta'
+         }/*
 
 
-export default validator;
+
+          //recorrar ese valor
+    //invertir numero tarjeta
+    //indentificar posiciones pares
+    //multiplicar pocisiones pares
+    //comprobar si es valida o no
+
