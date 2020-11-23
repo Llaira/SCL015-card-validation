@@ -31,16 +31,20 @@ document.getElementById("validar").addEventListener('click', validar)
     //se crea la funcion 
     console.log ("hola soy validar");
     let numeroTarjeta = document.getElementById("numeroTarjeta").value;
-    //console.log(numeroTarjeta);
-    let sum = 0;
-    //variable sumar
-    let TarjetaInvertida = numeroTarjeta.split('').reverse().join(''); //join devuelve en cadena la matriz
-    //invierto el numero de tarjeta
-    //console.log(TarjetaInvertida);
-    for (let i = 0; i < TarjetaInvertida.length; i++){
+    if (numeroTarjeta.length !== 16){
+      alert ("Número ingresado no es válido")
+    }
+    else {
+        //console.log(numeroTarjeta);
+     let sum = 0;
+      //variable sumar
+     let TarjetaInvertida = numeroTarjeta.split('').reverse().join(''); //join devuelve en cadena la matriz
+      //invierto el numero de tarjeta
+      //console.log(TarjetaInvertida);
+      for (let i = 0; i < TarjetaInvertida.length; i++){
       //ciclo for para recorrer el numero de tarjeta invertido
       //le doy inicio con el let i y el final no debe ser mayor a tarjeta invertida
-     // console.log(TarjetaInvertida[i]);
+      // console.log(TarjetaInvertida[i]);
         if (TarjetaInvertida.length === 16){
           //el numero de tarjeta invertida debe ser igual a 16
           //console.log("tengo 16 digitos");
@@ -68,18 +72,19 @@ document.getElementById("validar").addEventListener('click', validar)
 
       }
   
-    }  
-    //si el resultado del resto es = a cero, devolver o imprimir válida. si no es igual a cero devolver invalida
-    if (sum % 10 == 0){
+     }  
+      //si el resultado del resto es = a cero, devolver o imprimir válida. si no es igual a cero devolver invalida
+      if (sum % 10 == 0){
       alert ("Tarjeta Válida")
-    }
+      }
       else {
        alert ("Tarjeta Inválida")
       }
+    }
    }
 
    
-     const maskify = (numeroTarjeta) => {
+   /*  const maskify = (numeroTarjeta) => {
        console.log("maskify")
       let imprimir = "";
           if (numeroTarjeta.length <= 4) {
@@ -90,4 +95,4 @@ document.getElementById("validar").addEventListener('click', validar)
             imprimir = "".padEnd(numeroTarjeta.length - 4, "#") + numeroTarjeta.substring(numeroTarjeta.length - 4, numeroTarjeta.length)
             }
              return imprimir
-    }
+    }*/
