@@ -4,7 +4,7 @@
 }
 
 
-#pagina1{
+#paginaInicio{
     display: block;
 }
 
@@ -20,7 +20,7 @@ header{
     text-align: center;
 }
 
-.imagen1 {
+.imagenlogo {
     display: block;
     margin: auto;
     width: 400px;
@@ -37,12 +37,12 @@ header{
     font-size: 18px;
 }
 
-#pagina2{
+#paginaFormulario{
     display: none;
 }
 
 
-.imagen4 {
+.imagenlogo2 {
     display: block;
     width: 200px;
     justify-content: flex-start;
@@ -52,44 +52,27 @@ header{
 
 .frase2{
    position: absolute;
-   top: ;
+   text-align: center;
    left: 400px;
    height: 100%;
    width: 100%;
    margin: -15% 0 0 -15%;
  }
 
-#caja {
+#formulario {
     margin-top: auto;
     background-color: #F5B041 ;
     padding: 50px;
     border-radius: 50px;
-    width: 300px;
+    width: 250px;
     height: 350px;
     left: 500px;
     top: 150px;
     position: absolute;
 }
 
-#nombre{
-    background-color:  #C4C4C4;
-    border-radius: 40px;
-    padding: 5px 30px 5px 30px;
-    color: gray;
-    display: block;
-    margin: auto;
-    font-size: 12px;
-}
-
 #Nombre{
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#nombre-ejemplo{
-    background-color:  #614e4e;
+    background-color:  #C4C4C4;
     border-radius: 40px;
     padding: 5px 30px 5px 30px;
     color: gray;
@@ -148,24 +131,9 @@ header{
     font-size: 14px;
 }
 
-.imagen2{
+.imagentarjetas{
     display: block;
     width: 100px;
     justify-content: flex-end;
     order: default 1;
-}
-
-.imagen3{
-    display: block;
-    width: 200px;
-    justify-content: flex-end;
-    order: default -1;
-}
-
-#pagina3{
-    display: none;
-}
-
-#pagina4{
-    display: block;
 }
